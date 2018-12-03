@@ -8,7 +8,7 @@ $(document).ready(function()
   setTimeout(function()
   {
     window.close()
-  }, 5)
+  }, 50)
 
 
   chrome.runtime.sendMessage({action: 'restoreFocusHack'}, function(response)
