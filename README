@@ -1,8 +1,0 @@
-## restore focus
-
-- map Ctrl+E command key
-- when pressed from anywhere in the browser, focus is restored to the document's body
-
-The hack triggers a browser action which then moves the focus away
-
-
