@@ -1,27 +1,27 @@
 {
-  "background": {
-    "scripts": ["vendor/underscore-min.js", "extension-reloader.js", "background.js"]
-  },
-  "browser_action": {
-    "default_title": "Restore focus",
-    "default_popup": "popup.html"
-  },
-  "description": "Restore focus to the tab's document",
-  
-  "minimum_chrome_version": "25",
-  "manifest_version": 2,
-  "name": "Restore focus to document",
-  "permissions": [ "tabs"],
-
-  "version": "2017.5.10",
-
-  "commands": {
-    "_execute_browser_action": {
-       "suggested_key": {
-         "default": "Ctrl+E",
-         "mac": "Command+E",
-         "linux": "Ctrl+E"
-       }
+    "background": {
+        "scripts": ["vendor/underscore-min.js", "extension-reloader.js", "background.js"]
+    },
+    "browser_action": {
+        "default_title": "Restore focus",
+        "default_popup": "popup.html"
+    },
+    "description": "Restore focus to document from anywhere in browser",
+    "minimum_chrome_version": "25",
+    "manifest_version": 2,
+    "name": "Restore focus to document",
+    "permissions": ["tabs"],
+    "version": "2017.5.10",
+    "commands": {
+        "reloadExtension": {
+            "description": "Reload extension"
+        },
+        "_execute_browser_action": {
+            "suggested_key": {
+                "default": "Ctrl+E",
+                "mac": "Command+E",
+                "linux": "Ctrl+E"
+            }
+        }
     }
-  }
 }
